@@ -36,7 +36,9 @@ graph TD
         E[Horizontal Pod Autoscaler] -- Monitors --> C;
         E -- Monitors --> D;
     end
-```*   **User Request Flow:** A user sends a request that hits the Istio Ingress Gateway.
+```
+
+*   **User Request Flow:** A user sends a request that hits the Istio Ingress Gateway.
 *   **Service Mesh:** Istio routes the request to the appropriate microservice (e.g., Frontend). Services communicate with each other through the mesh.
 *   **Autoscaling:** The Horizontal Pod Autoscaler monitors the CPU and memory usage of the pods and automatically scales the number of replicas up or down.
 *   **Deployment:** All components are packaged and deployed as Helm charts.
